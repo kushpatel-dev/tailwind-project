@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<body class="font-sans m-0 p-0 bg-black">
+
+  <!-- Announcement Bar -->
+<div class="w-full bg-[#f9f8f3] py-2 px-4">
+  <div
+    class="max-w-[1400px] mx-auto flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-6 px-4 sm:px-6 lg:px-12">
+
+    <span class="text-gray-800 text-sm sm:text-base text-center md:text-left">
+      This is the first example of a sitewide notice.
+    </span>
+
+    <div class="flex flex-col sm:flex-row gap-2 w-full md:w-auto justify-center md:justify-end items-center">
+      <a href="#"
+        class="uppercase tracking-wide font-semibold px-6 py-1.5 bg-[#6c6c5f] text-white text-sm rounded-md shadow-md hover:bg-[#59594f] transition w-full sm:w-auto text-center">
+        BOOK NOW
+      </a>
+      <a href="#"
+        class="uppercase tracking-wide font-semibold px-6 py-1.5 border-2 border-[#6c6c5f] text-[#6c6c5f] text-sm rounded-md hover:bg-[#e6e6e2] transition w-full sm:w-auto text-center">
+        FIND A STYLIST
+      </a>
+      <a href="#"
+        class="uppercase tracking-wide font-semibold px-6 py-1.5 border-2 border-[#6c6c5f] text-[#6c6c5f] text-sm rounded-md hover:bg-[#e6e6e2] transition w-full sm:w-auto text-center">
+        GIFT
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Navigation Bar -->
+<header class="absolute w-full top-[185px] sm:top-[65px] md:top-[75px] lg:top-[90px] left-0 z-30">
+  <nav class="flex items-center justify-between max-w-[1400px] mx-auto px-4 sm:px-6 md:px-10 h-16 sm:h-18 md:h-20 lg:h-24">
+    <!-- Logo -->
+    <a href="#" class="flex items-center pl-2 sm:pl-4">
+      <img src="img/Logo.png" alt="Haus of Bloom Logo"
+        class="w-[60px] h-[60px] sm:w-[70px] sm:h-[70px] md:w-[80px] md:h-[80px] lg:w-[90px] lg:h-[90px] object-contain"
+        draggable="false" />
+    </a>
+
+    <!-- Nav Links (hidden below 1080px / lg) -->
+    <ul
+      class="hidden lg:flex flex-row items-center space-x-6 xl:space-x-10 text-[#f1eee7] font-medium tracking-wide text-base lg:text-lg drop-shadow">
+      <li><a href="#" class="hover:underline">SF Luxury Services</a></li>
+      <li><a href="#" class="hover:underline">Granite Bay Luxury Services</a></li>
+      <li><a href="#" class="hover:underline">Spa Amenities</a></li>
+      <li><a href="#" class="hover:underline">Haus of Bloom Experience</a></li>
+      <li><a href="#" class="hover:underline">Contact</a></li>
+    </ul>
+
+    <!-- Search Icon (visible on all sizes) -->
+    <div class="flex items-center gap-4">
+      <button aria-label="Search"
+        class="p-2 rounded-full hover:bg-stone-800 transition">
+        <svg class="w-5 h-5 sm:w-6 sm:h-6 text-[#fff]" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7" stroke="currentColor" />
+          <line x1="16.65" y1="16.65" x2="21" y2="21" stroke="currentColor" />
+        </svg>
+      </button>
+
+      <!-- Hamburger Icon (visible only <lg) -->
+      <button class="lg:hidden p-2 rounded-full hover:bg-gray-100 transition" aria-label="Open Menu">
+        <!-- Hamburger icon SVG -->
+        <svg class="w-6 h-6 text-[#e2dbdb]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<!-- hero section -->
+  <section class="relative w-full min-h-screen flex items-center justify-center">
+  <img src="img/2ad08f01a9ab43db087df5f35a3f8a338daf1595.jpg" alt="Haus of Bloom Experience"
+    class="absolute inset-0 w-full h-full object-cover z-0 min-h-screen" />
+  <div class="relative z-20 flex flex-col items-center justify-center w-full px-4">
+    <h1 class="text-white text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center leading-tight tracking-tight mb-8 uppercase drop-shadow-md">
+      <span class="block text-base sm:text-2xl md:text-3xl lg:text-4xl">STEP INTO THE</span>
+      <span class="block font-extrabold text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">HAUS OF BLOOM EXPERIENCE</span>
+      <span class="block font-extrabold text-lg sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">A MODERN RETREAT FOR HAIR</span>
+    </h1>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="#"
+        class="px-8 py-3 border-2 border-white text-white font-semibold text-base sm:text-lg rounded-lg transition shadow-md hover:bg-white hover:text-black text-center uppercase tracking-wide">
+        FIND A STYLIST
+      </a>
+      <a href="#"
+        class="px-8 py-3 border-2 border-white text-white font-semibold text-base sm:text-lg rounded-lg transition shadow-md hover:bg-white hover:text-black text-center uppercase tracking-wide">
+        BOOK NOW
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- section 2 -->
+  <section class="relative w-full min-h-screen flex items-stretch overflow-hidden">
+    <!-- Background Image -->
+    <img src="img/2a3fb396fcb98045986c99b0ac0d3fad4c0ec52b.jpg" alt="Haus of Bloom Experience"
+      class="absolute inset-0 w-full h-full object-cover z-0 min-h-screen" />
+    <!-- Linear Gradient Overlay -->
+    <div
+      class="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,_rgba(247,247,242,0)_10.28%,_rgba(247,247,242,0)_20.28%,_rgba(247,247,242,0)_30.28%,_#F7F7F2_100%)] z-10">
+    </div>
+    <!-- Right-Side Content with Vertical Divider and Info -->
+    <div
+      class="relative z-20 min-h-screen ml-auto w-full md:max-w-[800px] px-6 py-12 md:px-16 flex flex-row items-center"
+      style="box-sizing: border-box;">
+      <!-- Vertical Divider Line -->
+      <div class="h-[250px] md:h-96 w-1 rounded-2xl bg-[#818181] mr-8"></div>
+      <!-- Info Panel -->
+      <div class="w-2xl flex-1 flex flex-col items-start">
+        <h1 class="text-gray-900 text-4xl md:text-5xl font-bold mb-6 leading-tight uppercase tracking-tight">
+          THE HAUS OF BLOOM<br>
+          <span class="block font-normal text-4xl md:text-5xl text-[#777] not-italic mt-2">DIFFERENCE</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-700 mb-8 leading-relaxed">
+          Discover a sanctuary where hair, skin, and soul are nurtured. Our expert stylists and therapists craft
+          personalized beauty rituals in a space designed for calm, confidence, and creativity. We work with you to
+          create a look that works for your personality and lifestyle.<br>Read more...
+        </p>
+        <a href="#"
+          class="bg-[#6c6c5f] text-white px-7 py-3 rounded-lg font-semibold text-lg shadow hover:bg-[#515146] transition tracking-wide uppercase">
+          ABOUT US
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- section 3 -->
+  <section class="relative w-full min-h-screen flex items-center justify-center bg-[#f7f7f2] py-16">
+    <img src="img/3.jpg" alt="Service Background" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div class="absolute inset-0 pointer-events-none"
+      style="background: linear-gradient(0deg, #EBEBE5 0%, rgba(235,235,229,0.915) 33%, rgba(235,235,229,0) 75%);">
+    </div>
+
+    <!-- Cards Container -->
+    <div class="relative z-10 flex flex-col md:flex-row gap-8 w-full max-w-7xl mt-[100px] md:mt-[200px] px-4 md:px-10">
+      <!-- Bespoke Styling Card -->
+      <div class="flex-1 px-8 flex flex-col justify-end min-h-[340px]">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 tracking-tight text-gray-800 uppercase">Bespoke Styling<br><span
+            class="text-lg font-light">Services</span></h2>
+        <p class="mb-6 text-gray-600 text-base md:text-lg">From modern cuts to classic looks—tailored for you with
+          precision and artistry.</p>
+        <a href="#"
+          class="inline-block w-max bg-transparent border border-gray-800 px-5 py-2 font-semibold text-gray-900 rounded hover:bg-gray-100 transition text-sm md:text-base">LEARN
+          MORE</a>
+      </div>
+
+      <!-- Signature Color Card -->
+      <div class="flex-1 px-8 flex flex-col justify-end min-h-[340px]">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 tracking-tight text-gray-800 uppercase">Signature Color<br><span
+            class="text-lg font-light">Services</span></h2>
+        <p class="mb-6 text-gray-600 text-base md:text-lg">Dimensional balayage, lived-in blondes, and vibrant tones
+          created with care.</p>
+        <a href="#"
+          class="inline-block w-max bg-transparent border border-gray-800 px-5 py-2 font-semibold text-gray-900 rounded hover:bg-gray-100 transition text-sm md:text-base">LEARN
+          MORE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Award Section: 4  -->
+  <section class="w-full bg-[#EBEBE5] py-20 flex flex-col items-center">
+    <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+
+      <!-- Card 1 -->
+      <div class="backdrop-blur-md bg-black p-8 flex flex-col items-center text-center">
+        <img src="img/wreath 1 (1).png" alt="Best Luxury Salon" class="mb-6 w-16 h-16" />
+        <h2 class="text-white text-xl font-semibold mb-3">Best Luxury Salon 2024</h2>
+        <p class="text-gray-100 mb-6 text-base font-light">Recognized for outstanding service, elevated design, and
+          premium client care, Haus of Bloom was named the top salon destination for modern beauty seekers in San
+          Francisco.</p>
+        <a href="#"
+          class="inline-block bg-transparent border border-white text-white px-6 py-2 rounded font-semibold transition hover:bg-white hover:text-black">
+          READ MORE
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="backdrop-blur-md bg-black p-8 flex flex-col items-center text-center">
+        <img src="img/wreath 1 (1).png" alt="Eco Beauty Leader" class="mb-6 w-16 h-16" />
+        <h2 class="text-white text-xl font-semibold mb-3">Eco Beauty Leader</h2>
+        <p class="text-gray-100 mb-6 text-base font-light">Our commitment to clean products, mindful sourcing, and
+          sustainable practices earned us recognition as a leader in eco-conscious salon experiences.</p>
+        <a href="#"
+          class="inline-block bg-transparent border border-white text-white px-6 py-2 rounded font-semibold transition hover:bg-white hover:text-black">
+          READ MORE
+        </a>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="backdrop-blur-md bg-black p-8 flex flex-col items-center text-center">
+        <img src="img/wreath 1 (1).png" alt="Top Color Studio" class="mb-6 w-16 h-16" />
+        <h2 class="text-white text-xl font-semibold mb-3">Top Color Studio</h2>
+        <p class="text-gray-100 mb-6 text-base font-light">From natural blends to bold statements, our expert colorists
+          have been honored for creative mastery and consistently stunning results.</p>
+        <a href="#"
+          class="inline-block bg-transparent border border-white text-white px-6 py-2 rounded font-semibold transition hover:bg-white hover:text-black">
+          READ MORE
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- section 4-->
+  <section class="relative w-full min-h-screen flex items-center bg-gray-100">
+    <!-- Background image (replace with your image path) -->
+    <div class="absolute inset-0 w-full h-full">
+      <img src="img/55.jpg" alt="Salon background" class="w-full h-full object-cover" />
+      <!-- Custom gradient overlay for text readability -->
+      <div
+        class="absolute inset-0 w-full h-full bg-[linear-gradient(270deg,__rgba(247,__247,__242,__0)_0%,__rgba(247,__247,__242,__0.67)_35%,__rgba(247,__247,__242,__0.8)_55%,__#F7F7F2_100%)]">
+      </div>
+    </div>
+    <!-- Left-aligned content -->
+    <div class="relative z-10 max-w-xl w-full ml-8 md:ml-16 px-8 py-12 flex flex-col items-start">
+      <h2 class="text-4xl font-sans md:text-5xl font-bold text-gray-900 mb-5">
+        Where Elevated
+      </h2>
+      <h2 class="text-3xl font-serif md:text-4xl text-gray-900 mb-5">
+        Beauty Begins
+      </h2>
+      <p class="text-gray-700 text-lg mb-8">
+        Located in the heart of San Francisco, Haus of Bloom – SF Studio offers a sanctuary of style, calm, and expert
+        care. Step into a space where timeless design meets modern beauty.
+      </p>
+      <a href="#"
+        class="inline-block w-max bg-transparent border border-gray-800 px-5 py-2 font-semibold text-gray-900 rounded hover:bg-gray-100 transition text-sm md:text-base">
+
+        Contact San Francisco
+      </a>
+
+    </div>
+  </section>
+
+  <!-- section 5 -->
+  <section class="relative w-full min-h-screen flex items-center overflow-hidden">
+    <!-- Background Image -->
+    <img src="img/6.jpg" alt="Content background" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <div
+      class="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,_rgba(247,247,242,0)_0%,_rgba(247,247,242,0.67)_35%,_rgba(247,247,242,0.8)_55%,_#F7F7F2_100%)] z-10">
+    </div>
+
+    <div class="relative z-20 max-w-2xl w-full ml-auto md:mr-16 px-8 py-12 flex flex-col items-start">
+      <h2 class="text-4xl font-sans md:text-5xl font-bold text-gray-900 mb-5">
+        Rooted in Care
+      </h2>
+      <h2 class="text-3xl font-serif md:text-4xl text-gray-900 mb-5">
+        Styled for Life.
+      </h2>
+      <p class="text-gray-700 text-lg mb-8">
+        Experience the elegance of Haus of Bloom Granite Bay, where everyday beauty meets upscale simplicity.
+        Set against the backdrop of peaceful Quarry Ponds, our studio is a quiet haven for personalized hair and
+        skincare experiences.<br><br>
+        Here, it’s never just an appointment—it’s a moment to reset. Our artists specialize in effortless color,
+        precision styling, and restorative treatments tailored to your rhythm and lifestyle.<br><br>
+        Whether you're local or visiting, step into a space that feels calm, intentional, and beautifully yours.
+      </p>
+      <a href="#"
+        class="inline-block bg-transparent border border-gray-800 px-6 py-2 font-semibold text-gray-900 rounded hover:bg-gray-100 transition text-base">
+        Contact Granite Bay
+      </a>
+    </div>
+  </section>
+
+  <!-- /section 6 -->
+  <section class="relative w-full min-h-screen flex items-center justify-end overflow-hidden bg-[#F7F7F2]">
+    <!-- Background Image -->
+    <img src="img/7.jpg" alt="Salon interior" class="absolute inset-0 w-full h-full object-cover z-0" />
+    <!-- Optional: Overlay for contrast on busy backgrounds -->
+    <div class="absolute inset-0 bg-black/10 z-0"></div>
+
+    <!-- Right-Aligned Card -->
+    <div
+      class="relative z-10 max-w-xl w-full bg-white/95 flex flex-row p-8 md:p-12 mr-0 md:mr-20 lg:mr-28 items-stretch">
+      <!-- Accent (left) border -->
+      <div class="hidden md:block w-2 rounded-[10px] bg-[#5F5E4A] absolute left-4 h-[500px]"></div>
+      <!-- Card Content -->
+      <div class="flex flex-col pl-0 md:pl-8 w-full">
+        <h2 class="text-3xl md:text-4xl font-extrabold text-[#232222] mb-6 leading-tight tracking-tight">
+          CONTACT US, <span class="text-[#232222]">TODAY!</span>
+        </h2>
+        <p class="text-base md:text-lg text-[#434343] mb-7 leading-relaxed">
+          With a convenient location in San Francisco, Blake Charles Salon is the place to go for anyone who wants to
+          feel and look their absolute best! Visit our hair and nail salon on Maiden Lane to be treated to the best
+          salon experience San Francisco has to offer.<br><br>
+          Simply book your appointment online or contact us at our salon on Maiden Lane at
+          <span class="block font-bold text-base md:text-xl text-[#434343] py-2">415-433-3030</span>
+          We look forward to seeing you soon and treating you to a one-of-a-kind salon experience!
+        </p>
+        <a href="#"
+          class="w-max px-7 py-3 bg-[#5F5E4A] text-white font-semibold text-base md:text-lg rounded-[6px] shadow hover:bg-[#464539] transition tracking-wide uppercase">
+          Contact Us Directly
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer class="bg-[#f7f7f2] w-full px-2 md:px-8 pt-12 pb-6">
+    <!-- Part 1: Featured In Logos -->
+    <div class="max-w-7xl mx-auto flex flex-col items-center">
+      <h2 class="text-lg md:text-xl font-semibold tracking-wide mb-7 text-gray-900 uppercase">Featured In</h2>
+      <div class="flex flex-wrap flex-1 justify-center gap-5 md:gap-8 items-center mb-8">
+        <img src="img/haute.png" alt="Haute Living" class="h-4 md:h-6 object-contain" />
+        <img src="img/gazette.png" alt="Gazette" class="h-4 md:h-6 object-contain" />
+        <img src="img/este.png" alt="Estetica" class="h-4 md:h-6 object-contain" />
+        <img src="img/sf.png" alt="SFWeekly" class="h-4 md:h-6 object-contain" />
+        <img src="img/mod.png" alt="Modern Luxury" class="h-4 md:h-6 object-contain" />
+        <img src="img/SANF_mag_black 1 (1).png" alt="San Francisco Magazine" class="h-4 md:h-6 object-contain" />
+      </div>
+
+      <!-- Horizontal dividing line -->
+      <div class="w-full border-t border-[#d0d0c9] my-6"></div>
+    </div>
+
+    <!-- Part 2: Footer Menus and Info -->
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-stretch gap-10 md:gap-0 mt-4">
+      <!-- Left: Instagram CTA & Image -->
+      <div class="flex-1 flex flex-col gap-4 justify-start items-center md:items-baseline max-w-[450px]">
+        <div>
+          <h3 class="font-bold text-[20px] mb-1 text-gray-900">FOLLOW US ON INSTAGRAM</h3>
+          <span class="font-semibold text-[16px] text-[#232222]">@hausofbloomsaloon</span>
+        </div>
+        <div>
+          <img src="img/hair.png" alt="Salon Instagram" class="w-[170px] aspect-square object-cover cursor-pointer" />
+        </div>
+      </div>
+      
+      <div class="flex flex-1 flex-col gap-10 max-w-[450px]">
+        <div class="flex flex-col items-center md:items-start">
+          <h4 class="font-bold text-gray-900 text-base md:text-lg mb-3 tracking-tight">
+            HAUS OF BLOOM EXPERIENCE
+          </h4>
+          <ul class="flex flex-col items-center md:items-start gap-0.5 text-[15px] text-[#474540]">
+            <li><a href="#" class="hover:underline">Private Events</a></li>
+            <li><a href="#" class="hover:underline">Careers</a></li>
+            <li><a href="#" class="hover:underline">ManeMatch</a></li>
+            <li><a href="#" class="hover:underline">MedSpa Partner</a></li>
+            <li><a href="#" class="hover:underline">Salon Policies</a></li>
+          </ul>
+        </div>
+        <!-- Second group: LEARN MORE -->
+        <div class="flex flex-col items-center md:items-baseline">
+          <h4 class="font-bold text-gray-900 text-base md:text-lg mb-3 tracking-tight">
+            LEARN MORE
+          </h4>
+          <ul class="flex flex-col items-center md:items-start gap-0.5 text-[15px] text-[#474540]">
+            <li><a href="#" class="hover:underline">Latest News</a></li>
+            <li><a href="#" class="hover:underline">Cancellation Policy</a></li>
+            <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            <li><a href="#" class="hover:underline">Accessibility</a></li>
+            <li><a href="#" class="hover:underline">FAQs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Right: Branding and Social -->
+      <div class="flex-1 flex flex-col items-center md:items-center gap-5 md:gap-12">
+        <div class="flex items-center gap-2">
+          <img src="img/Logo (3).png" alt="Haus of Bloom Logo" class="h-20 w-30 object-contain" />
+
+        </div>
+        <!-- Social Icons Row -->
+        <div class="flex gap-3 mt-1">
+          <a href="#"><img src="img/instagram icon (1).png" alt="Instagram" class="h-6 w-6" /></a>
+          <a href="#"><img src="img/facebook icon (1).png" alt="Facebook" class="h-6 w-6" /></a>
+          <a href="#"><img src="img/tiktok icon (1).png" alt="TikTok" class="h-6 w-6" /></a>
+          <a href="#"><img src="img/yelp icon (1).png" alt="Yelp" class="h-6 w-6" /></a>
+          <a href="#"><img src="img/youtube icon (1).png" alt="YouTube" class="h-6 w-6" /></a>
+          <a href="#"><img src="img/linkedin icon (1).png" alt="LinkedIn" class="h-6 w-6" /></a>
+        </div>
+        <span class="text-xs mt-10 md:32 text-[#59594f] font-medium">©2025 Haus of Bloom</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
